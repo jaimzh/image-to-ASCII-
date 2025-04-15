@@ -11,7 +11,7 @@ def main():
     def resize_image(image, new_width):
         width, height = image.size
         aspect_ratio = height / width
-        new_height = int(new_width * aspect_ratio)
+        new_height = int(new_width * aspect_ratio * 0.45)
         return image.resize((new_width, new_height))
         
     #next up we greyscale resized image
@@ -37,7 +37,7 @@ def main():
     print(ascii_image)
     
     #saving in a txt
-    with open("ascii_text_created.txt", "w") as file:
+    with open("ascii_text_created2.txt", "w") as file:
         file.write(ascii_image)
         
         
